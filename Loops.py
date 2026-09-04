@@ -31,3 +31,24 @@
 #     print("amit ki kitni bandiya hai", i)
 #     i -= 1
     
+
+#print the multiplication table of a number n 
+
+# i = 1
+# while i<=10:
+#     print(3*i)
+#     i = i+1
+
+
+#let's find the index values of a list which contains numbers , now kisi bhi list ke index ke upar ek ek krke jaana is called uss pr traverse krna 
+
+# nums = [1,4,9,16,25,36,49,64,81,100]
+
+# idx = 0 
+
+# while idx < len(nums):
+#     print(idx)
+#     idx+=1 
+
+
+#_________________________________________________________________________________________________________________________________
