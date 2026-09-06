@@ -42,4 +42,27 @@ Sint = {
 }
 
 
+# print(Sint)
+
+
+# print(list(Sint.keys())) same could be written for values
+
+# print(tuple(Sint.items()))
+
+
+# print(Sint.get("score"))
+
+# Q. How to get to nested values 
+
+
+#______________________________________________________________________________
+
+#Python is a synchronous language which means if you get the error in the first functions 
+#execution you will get error and the other function won't get executed until and unless the other task
+#will be executed 
+
+
+Sint.update({"contact" : "89898988"})
+
+
 print(Sint)
