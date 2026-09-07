@@ -22,11 +22,31 @@
 
 # create a function that calculates a average of 3 numbers 
 
-def lund(a,b,c):
-    avg =  a+b+c
-    avg2 = avg / 3
-    print(avg2)
-    return avg2
+# def run(a,b,c):
+#     avg =  a+b+c
+#     avg2 = avg / 3
+#     print(avg2)
+#     return avg2
 
 
-lund(348834,43899843,43989834)
+# run(348834,43899843,43989834)
+
+
+# wap to print the length of a list 
+
+# def length_of_list(lst):
+#     length = len(lst)
+#     print(length)
+#     return length
+
+# length_of_list(["apple", "banana", "cherry", "date"])
+
+
+# wap to print the elements of a list in a single line 
+
+list = ["apple", "banana", "cherry", "date"]
+def print_list_elements(lst):
+    for item in lst:
+        print(item, end=" ")
+
+print_list_elements(["apple", "banana", "cherry", "date"])
