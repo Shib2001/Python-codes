@@ -44,9 +44,41 @@
 
 # wap to print the elements of a list in a single line 
 
-list = ["apple", "banana", "cherry", "date"]
-def print_list_elements(lst):
-    for item in lst:
-        print(item, end=" ")
+# list = ["apple", "banana", "cherry", "date"]
+# def print_list_elements(lst):
+#     for item in lst:
+#         print(item, end=" ")
 
-print_list_elements(["apple", "banana", "cherry", "date"])
+# print_list_elements(["apple", "banana", "cherry", "date"])
+
+
+#WAP to find the factorial of n. ( n is the parameter )
+
+# with loops it was damn easy 
+
+# n = 5
+# fact = 1 
+# for i in range (1, n+1):
+#     fact *= i
+# print(fact)
+
+#with functions it would be likee this 
+
+# def cal_fact(n):
+#     fact = 1
+#     for i in range(1, n+1):
+#         fact *= i
+#     print(fact)
+
+# cal_fact(56)
+
+
+# WAP to convert usd to inr 
+
+# def convert(usd):
+#     inr = usd * 83
+#     print(usd, "usd = ", inr,"INR")
+
+# convert(100)
+
+#WAP WHERE TAKE INPUT OF A NUMBER IF THE NUMBER IS ODD THE FUNCTION WOULD PRINT STRING ODD IF EVEN IT WOULD PRINT EVEN
