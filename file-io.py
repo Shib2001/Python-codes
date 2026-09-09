@@ -28,17 +28,17 @@
 
 #WRITE MODE 
 
-f = open("file.txt","a")
+# f = open("file.txt","a")
 
-new = f.write("ndshgsdhgsadhgdhdhasgdhsgds")
-print(new)
+# new = f.write("ndshgsdhgsadhgdhdhasgdhsgds")
+# print(new)
 
-f.close()
+# f.close()
 
 
 # Another way to create a file if that doesn't exist 
-f = open("sample.txt","w") #this will create a new file if it doesn't exist, if it exists it will raise an error
-f.close()
+# f = open("sample.txt","w") #this will create a new file if it doesn't exist, if it exists it will raise an error
+# f.close()
 
 # As you can see in the python-codes that file has been automatically created in the same directory as the python file.
 
@@ -47,6 +47,38 @@ f.close()
 
 
 
-with open("file.txt","w") as f:
-    data = f.write("Hello, World!")
+# with open("file.txt","w") as f:
+#     data = f.write("Hello, World!")
+#     print(data)
+
+
+# Create a new file "practice.txt" using python. Add the following data in it 
+# with open("practice.txt","w") as f:
+#     data = f.write(" Hi everyone we are learning file i-o using java , i like programming in java ")
+#     print(data)
+
+
+# Write a program to replace java with python in the above file.
+
+# with open("practice.txt","r") as f:
+#     data = f.read()
+
+#     new_data = data.replace("java","python")
+#     print(new_data)
+
+#     with open("practice.txt","w") as f:
+#         f.write(new_data)
+
+#________________________________________________________________________________________
+
+
+with open("practice.txt","r") as f:
+    data = f.read("learning")
     print(data)
+    f.close()
+
+
+
+  
+
+
