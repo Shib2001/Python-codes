@@ -66,32 +66,38 @@
 
 
 
-class Account:
+# class Account:
 
-    def __init__(self, balance, account):
-        self.balance = balance
-        self.account = account
+#     def __init__(self, balance, account):
+#         self.balance = balance
+#         self.account = account
 
-# Now we have to create a method to deposit and withdraw money from the account.
+# # Now we have to create a method to deposit and withdraw money from the account.
 
 
-    def deposit(self, amount):
-        self.balance += amount
-        print("Amount deposited:", amount)
-        print("Current balance:", self.balance)
+#     def deposit(self, amount):
+#         self.balance += amount
+#         print("Amount deposited:", amount)
+#         print("Current balance:", self.balance)
 
-    def withdraw(self, amount):
-        if amount > self.balance:
-            print("Insufficient balance")
-        else: 
-            self.balance -= amount
-            print("Amount withdrawn:", amount)
-            print("Current balance:", self.balance)
+#     def withdraw(self, amount):
+#         if amount > self.balance:
+#             print("Insufficient balance")
+#         else: 
+#             self.balance -= amount
+#             print("Amount withdrawn:", amount)
+#             print("Current balance:", self.balance)
 
-my_account = Account(1000, "AC83788393")
+# my_account = Account(1000, "AC83788393")
 
-# my_account.deposit(1500)
-my_account.withdraw(33500)
+# # my_account.deposit(1500)
+# my_account.withdraw(33500)
+
+
+
+
+
+
 
 
 
