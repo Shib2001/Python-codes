@@ -1,4 +1,4 @@
-listing = [8,989,988787,8777878]
+# listing = [8,989,988787,8777878]
 
 # print(listing.append(4))
 
