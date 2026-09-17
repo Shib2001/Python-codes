@@ -25,22 +25,22 @@
 
 
 
-msg = "Python is awesome!"
+# msg = "Python is awesome!"
 
 
-#Word 1 : Python 
+# #Word 1 : Python 
 
-print(msg[0:6])
-
-
-#Word 2 : awesome
-
-print(msg[10:17])
+# print(msg[0:6])
 
 
-#Word 3 : ! 
+# #Word 2 : awesome
 
-print(msg[17])
+# print(msg[10:17])
+
+
+# #Word 3 : ! 
+
+# print(msg[17])
 
 
 
@@ -49,17 +49,67 @@ print(msg[17])
 # Topics: Lists, List-fun
 # Question: Create a list containing 4 of your favorite fruits. Next, use a list function to add "Mango" to the end of the list. Finally, use another function to remove the second fruit from your list and print the updated list.
 # 💡 Hint: Look into the .append() method for adding an item to the end, and the .pop() method or del keyword for removing an item at a specific index.
+
+
+# fruits = ["apple", "watermelon", "rasberry", "peach"]
+
+# fruits.append("mango")
+
+# fruits.pop(1)
+
+# print(fruits)
+
+
+
+
+
 # 🟡 Medium
 # 4. Leap Year Checker
 
 # Topics: Conditions, Ternary, Calculation
 # Question: Write a program that asks for a year and determines if it is a leap year. Try to use a ternary operator to assign the string "Leap Year" or "Not a Leap Year" to a variable, then print it.
 # 💡 Hint: A year is a leap year if it is divisible by 4. However, if it ends in 00 (divisible by 100), it must also be divisible by 400. A ternary operator in Python looks like: value_if_true if condition else value_if_false.
+
+
+
+# year = int(input("Please enter the year:"))
+
+# if(year%4==0):
+#     print("The year is a leap year")
+# else:
+#     print("The year is not a leap year")
+
+
+
+
 # 5. Grade Book Analyzer
 
 # Topics: Dictionaries, forloops, Conditions
 # Question: You are given a dictionary of student test scores: scores = {"Alice": 85, "Bob": 92, "Charlie": 78}. Write a for loop to iterate through this dictionary and print each student's name alongside a letter grade (>= 90 is 'A', >= 80 is 'B', otherwise 'C').
 # 💡 Hint: You can easily iterate through both keys and values in a dictionary simultaneously by using the .items() method in your for loop.
+
+
+
+# Students ={
+#     "Alice":85,
+#     "Bob":92,
+#     "Charlie":78
+# }
+
+
+
+# for name, score in Students.items():
+
+#     if score >= 90:
+#         grade = "A"
+#     elif score >= 80:
+#         grade = "B"
+#     else:
+#         grade = "C"
+
+#     print(name, grade)
+
+
 # 6. Factorial Finder
 
 # Topics: Functions, Recursions
