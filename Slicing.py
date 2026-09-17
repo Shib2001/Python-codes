@@ -9,5 +9,5 @@
 
 
 
-Str2 = "Apple"
-print(Str2[-3:-1])
+# Str2 = "Apple"
+# print(Str2[-3:-1])
