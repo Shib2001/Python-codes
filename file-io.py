@@ -72,14 +72,14 @@
 #________________________________________________________________________________________
 
 
-with open("practice.txt","r") as f:
-    data = f.read()
+# with open("practice.txt","r") as f:
+#     data = f.read()
 
 
-if "learning" in data:
-    print("Yes, 'learning' is present in the file.")
-else:
-    print("No, 'learning' is not present in the file.")
+# if "learning" in data:
+#     print("Yes, 'learning' is present in the file.")
+# else:
+#     print("No, 'learning' is not present in the file.")
 
 
 

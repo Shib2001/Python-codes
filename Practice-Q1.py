@@ -27,10 +27,10 @@
 #print true if a is gretaer then or equal to b , else false
 
 
-Num1 = int(input("Please enter your first number for comparison : "))
-Num2 = int(input("Please enter your second number for comparison : "))
+# Num1 = int(input("Please enter your first number for comparison : "))
+# Num2 = int(input("Please enter your second number for comparison : "))
 
-if(Num1>=Num2):
- print("true")
-else:
- print("false")
+# if(Num1>=Num2):
+#  print("true")
+# else:
+#  print("false")
