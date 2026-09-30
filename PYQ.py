@@ -115,24 +115,47 @@
 # Topics: Functions, Recursions
 # Question: Write a recursive function called calculate_factorial(n) that takes an integer and returns its factorial. Test it by finding the factorial of 5.
 # 💡 Hint: The factorial of a number n is n * calculate_factorial(n-1). Don't forget your base case to stop the recursion: the factorial of 1 (or 0) is simply 1!
-# 7. Unique Word Counter
 
+
+
+
+
+
+# 7. Unique Word Counter
 # Topics: file-io, Set, String-fun
 # Question: Create a file named sample.txt with a few sentences of text. Write a script that reads this file line by line, splits the lines into words, and adds all the words to a set. Finally, print the total number of unique words in the file.
 # 💡 Hint: Use the with open(...) context manager to read the file safely. The .split() method will break sentences into words. A set is perfect here because it automatically discards duplicate entries.
+
+
+with open("sampling.txt","w") as f:
+    data = f.write("hddshagjsdahdsajhdas")
+    print(data)
+
+
+
+
 # 🔴 Hard
 # 8. Vehicle Fleet
 
 # Topics: Oops, Inheritance, Polymorphism
 # Question: Create a base class called Vehicle with an __init__ method that sets make and model. Then, create a subclass called Car that inherits from Vehicle but also has a num_doors attribute. Implement a display_info() method in both classes using method overriding to print their specific details.
 # 💡 Hint: Inside the Car class's __init__ method, use super().__init__(make, model) to call the parent class's constructor before setting the new num_doors attribute.
+
+
+
+
 # 9. Employee Tracking
 
 # Topics: Oops(part-2), Class-method
 # Question: Create a class called Employee. It should have a class attribute called total_employees that increments by 1 every time a new Employee object is initialized. Write a @classmethod that prints out the current value of total_employees. Instantiate 3 employees and call the class method to verify the count.
 # 💡 Hint: A class attribute is defined directly inside the class, outside of the __init__ method. Your class method should take cls as its first parameter (instead of self) and access the variable via cls.total_employees.
-# 10. Persistent To-Do List Application
 
+
+
+
+# 10. Persistent To-Do List Application
 # Topics: Loops, Conditions, Inputs, file-io, Oops
 # Question: Build a simple, interactive To-Do List app using OOP. Create a TaskManager class with methods to add_task(task), view_tasks(), and save_to_file(). Use a while loop to show the user a menu with choices (1. Add, 2. View, 3. Save & Exit). The program should keep running until the user chooses to exit, at which point it writes all tasks to a text file.
 # 💡 Hint: Keep a list of strings inside your TaskManager instance to hold the tasks. When saving, iterate over that list and write each string followed by a newline \n to your file.
+
+
