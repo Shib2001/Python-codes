@@ -45,3 +45,32 @@
 
 # Infinte genrators 
 
+# def infinite_food():
+#     count = 1
+#     while True:
+#         yield f"Refil #{count}"
+#         count += 1
+
+
+# refill = infinite_food()
+
+# for _ in range (7):
+#     print(next(refill))
+
+
+# How can we send the values to the generators and how can we store the value in yeield 
+
+
+
+def Samosa_center():
+    print("Welcome to our shop ! what would you like to have ?")
+    order = yield # as you can see here we are storing the value in yeild 
+    while True:
+        print(f"Preparing: {order}")
+        order = yield # we wrote this for getting mutiple orders , if we comment this only the first order would run and that too infinietly 
+
+stall = Samosa_center()
+next(stall) #Start the generator
+
+stall.send("Masala Chai") # here we are sendibg the value to the genrator
+stall.send("Meat samosa")
