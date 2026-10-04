@@ -62,15 +62,47 @@
 
 
 
-def Samosa_center():
-    print("Welcome to our shop ! what would you like to have ?")
-    order = yield # as you can see here we are storing the value in yeild 
-    while True:
-        print(f"Preparing: {order}")
-        order = yield # we wrote this for getting mutiple orders , if we comment this only the first order would run and that too infinietly 
+# def Samosa_center():
+# #     print("Welcome to our shop ! what would you like to have ?")
+# #     order = yield # as you can see here we are storing the value in yeild 
+# #     while True:
+# #         print(f"Preparing: {order}")
+# #         order = yield # we wrote this for getting mutiple orders , if we comment this only the first order would run and that too infinietly 
 
-stall = Samosa_center()
-next(stall) #Start the generator
+# # stall = Samosa_center()
+# # next(stall) #Start the generator
 
-stall.send("Masala Chai") # here we are sendibg the value to the genrator
-stall.send("Meat samosa")
+# # stall.send("Masala Chai") # here we are sendibg the value to the genrator
+# # stall.send("Meat samosa")
+
+
+
+# Close generators 
+
+def local_chai():
+    yield "Masala chai"
+    yield "Ginger chai"
+
+def imported_chai():
+    yield "Matcha"
+    yield "Oolong"
+
+
+def full_menu():
+    yield from local_chai()
+    yield from imported_chai()
+
+for chai in full_menu():
+    print(chai)
+
+
+def chai_stall():
+    try:
+        while True:
+            order = yield "waiting for the chai order"
+    except:
+        print("Stall closed , No more chai")
+
+stall = chai_stall()
+print(next(stall))
+stall.close() # and this is how we close a generator 
