@@ -50,7 +50,67 @@
 #     print(e)
 
 
+# def brew_chai(flavor):
+#     if flavor not in ["masala", "ginger","elaichi"]:
+#         raise ValueError("Unsupported chai flavor....")
+#     print(f"brewing {flavor} chai for you")
+
+# brew_chai("mint")
+# print(brew_chai)
+
 
 # Custom errors ____________________________________________________________________________________________________________________
 
 
+class InsufficientBalanceError(Exception):
+    pass
+
+
+def withdraw(balance, amount):
+
+    if amount > balance:
+        raise InsufficientBalanceError("Insufficient balance")
+
+    return balance - amount
+
+
+# balance = 10000000
+# amount = 500000
+
+
+# try:
+
+#      withdraw(balance, amount)
+#      print(f"Your amount {amount} has been succefully withdrawn  , your current balance is {balance}")
+
+# except InsufficientBalanceError as e:
+#     print(e)
+
+# Finally example ____________________________________________________________________________________________________
+
+class InsufficientBalanceError(Exception):
+    pass
+
+
+def withdraw(balance, amount):
+
+    if amount > balance:
+        raise InsufficientBalanceError("Insufficient balance")
+
+    return balance - amount
+
+balance = 10000000
+amount = 500000
+
+
+try:
+    new_balance = withdraw(balance, amount)
+
+except InsufficientBalanceError as e:
+    print(e)
+
+else:
+    print(f"Withdrawal successful of amount {amount}")
+
+finally:
+    print(f"Transaction process completed , Your current balance is {new_balance}")
