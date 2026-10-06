@@ -41,10 +41,16 @@
 # Raise + try except 
 
 
-foods = {"masala": 45, "milk":78}
+# foods = {"masala": 45, "milk":78}
 
-try : 
-    if "diary" not in foods:
-        raise KeyError("The key 'diary' does not exist ")
-except KeyError as e:
-    print(e)
+# try : 
+#     if "diary" not in foods:
+#         raise KeyError("The key 'diary' does not exist ")
+# except KeyError as e:
+#     print(e)
+
+
+
+# Custom errors ____________________________________________________________________________________________________________________
+
+
