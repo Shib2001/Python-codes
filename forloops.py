@@ -7,10 +7,10 @@
 
 #____________________________________________________________________
 
-# str = "my name is shiv kumar jha"
+str = "my name is shiv kumar jha"
 
-# for chr in str:
-#     print(chr)
+for chr in str:
+    print(chr)
 
 
 #_______________________________________________________________________________

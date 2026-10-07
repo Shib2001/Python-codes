@@ -1,1 +1,1 @@
-print("teri maa ki chut")
+print ("Hello world")
