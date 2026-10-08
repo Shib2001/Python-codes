@@ -48,7 +48,8 @@ async def fetch_url(session, url):
 
 async def main():
     urls = ["https://httpbin.org/delay/2"] * 3
-    async with aiohttp.ClientSession() as session:
+    async with aiohttp.ClientSession() as session: 
+        # This creates an HTTP session.Think of the session as a connection manager for making HTTP requests.Instead of creating a completely new HTTP setup for every request:
         tasks = [fetch_url(session, url) for url in urls]
         await asyncio.gather(*tasks)
 
